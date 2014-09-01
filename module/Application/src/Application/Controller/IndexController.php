@@ -18,8 +18,6 @@ class IndexController extends AbstractActionController
     {
         $em = $this->getServiceLocator()->get('doctrine.entitymanager.orm_default');
         
-        die(var_dump($em));
-        
         return new ViewModel(array(
             "test" => "Grzegorz Kaszuba"
         ));
